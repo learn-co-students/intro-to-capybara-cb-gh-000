@@ -4,6 +4,7 @@ describe "GET '/' - Greeting Form" do
   # Code from previous example
   it 'welcomes the user' do
     visit '/'
+    # page.body dumps out all of the html from the page
     expect(page.body).to include("Welcome!")
   end
 
